@@ -33,20 +33,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* A few media query to set some font sizes at different screen sizes.
- * This helps automate a bit of responsiveness.
- * The trick is to use the rem unit for size values, margin and padding.
- * Because rem is relative to the document font size
- * when we scale up or down the font size on the document
- * it will affect all properties using rem units for the values.
-*/
 
-/* I am using the em unit for breakpoints
- * The calculation is the following
- * screen size divided by browser base font size
- * As an example: a breakpoint at 980px
- * 980px / 16px = 61.25em
-*/
+
+/* 980px / 16px = 61.25em */
 
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
@@ -112,7 +101,7 @@ img {
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   left: 0;
@@ -129,7 +118,7 @@ img {
 }
 
 @media (max-width: 28.75em) {
-  .nav {  
+  .nav {
     justify-content: center;
   }
 
@@ -145,7 +134,9 @@ img {
 }
 
 .nav-list a:hover {
-  background: var(--main-secondary);
+  background: var(--main-primary);
+  transform: scale(1.1, 1);
+  text-decoration: bold;
 }
 
 /* Welcome section */
