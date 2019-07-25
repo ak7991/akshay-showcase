@@ -171,7 +171,12 @@ img {
   color: var(--main-primary);
   text-align: center;
 }
-
+p#resume-link{
+  color: lightgreen;
+}
+p#resume-link:hover{
+  color: lightblue;
+}
 #linkedin-logo {
   display: inline-block;
   height: 5rem;
