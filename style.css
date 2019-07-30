@@ -161,7 +161,50 @@ img {
   font-style: italic;
   color: var(--secondary-black);
 }
+.profile-pic:hover {
 
+  animation-duration: 0.5s;
+  animation-name: pop-image;
+  animation-fill-mode: forwards;
+}
+
+/* Declaring all animation types (compatability) */
+@-webkit-keyframes pop-image {
+  0%   { 
+    opacity: 1; 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1.1, 1.1); 
+  }
+}
+@-moz-keyframes pop-image {
+  0%   { 
+    opacity: 1; 
+  }
+  100% {
+    opacity: 1; 
+    transform: scale(1.1, 1.1); 
+  }
+}
+@-o-keyframes pop-image {
+  0%   { 
+    opacity: 1; 
+  }
+  100% {
+    opacity: 1; 
+    transform: scale(1.1, 1.1); 
+  }
+}
+@keyframes pop-image {
+  0%   { 
+    opacity: 1; 
+  }
+  100% {
+    opacity: 1; 
+    transform: scale(1.1, 1.1); 
+  }
+}
 #welcome-seperator {
   color: var(--secondary-black);
   width: 70%;
