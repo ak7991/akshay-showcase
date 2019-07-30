@@ -190,6 +190,16 @@ img {
   margin-right: 30px;
   text-align: justify;
 }
+.about-me .humble-brag{
+  opacity: 0.1;
+  margin: 10px 0 10px 0;
+  font-weight: 200;
+}
+.about-me:hover .humble-brag{
+  opacity: 0.2;
+  font-weight: 50;
+}
+
 .resume-link{
   color: var(--secondary-black);
 }
@@ -206,7 +216,7 @@ img {
 .projects-section-header, .about-me-section-header {
   text-align: left;
   max-width: 640px;
-  margin: 0 auto 6rem auto;
+  margin: 0 auto 3rem auto;
   border-bottom: 0.2rem solid var(--main-white);
   color: --main-black;
 }
